@@ -18,6 +18,11 @@
 #define HRM_L RALT_T(KC_L)
 #define HRM_SCN RCTL_T(KC_SCLN)
 
+const uint16_t PROGMEM combo_E_R[] = {KC_E, KC_R, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(combo_E_R, CW_TOGG)
+};
 
 enum layers {
     BASE,  // default layer
